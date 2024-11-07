@@ -9,6 +9,7 @@
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="icon" href="./images/Spotify_Favicon.png" type = "image/png">
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
     <div class = "spotify-website">
@@ -17,14 +18,18 @@
                 <a href="https://www.spotify.com"><img src = "./images/Spotify_Logo.png" alt = "spotify logo"  class="spotify-logo" /></a>
             </div>
             <div class="spotify-search">
-                <div class="icon-container">
+                <div class="home-container">
                     <img src = "./images/Spotify_Home.png" alt = "home logo" class="home-logo" />
                 </div>
                 <div class = "search-bar">
-                    <img src = "./images/Search_Icon.png" alt = "search icon" class = "search-icon"/>
-                    <input type="search" placeholder = "What do you want to play?" class="spotify-search-box"/>
-                    <span class="vertical-line"></span>
-                    <img src = "./images/Spotify_Browse.png" alt = "spotify browse" class="browse-icon" />
+                    <div class="input-container">
+                        <img src = "./images/Search_Icon.png" alt = "search icon" class = "search-icon"/>
+                        <input type="search" placeholder = "What do you want to play?" class="spotify-search-box"/>
+                        <div class="right-container">
+                            <span class="vertical-line"></span>
+                            <img src = "./images/Spotify_Browse.png" alt = "spotify browse" class="browse-icon" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="spotify-signup-and-login">
@@ -33,132 +38,137 @@
             </div>
         </nav>
         <div class="spotify-main-section">
-            <div class="library-container">
-                <div class="your-library">
-                    <div>                        
-                        <img src = "" alt = "library icon" class="library-icon" />
+            <div class="library-and-footer-container">
+                <div class="library-container">
+                    <div class="your-library">                        
+                        <img src = "./images/Spotify_Library_Icon.png" alt = "library icon" class="library-icon" />
                         <h1 class="library-heading">Your Library</h1>
                     </div>
-                    <p class="plus-sign">+</p>
+                    <div>
+                        <p class="plus-sign">+</p>
+                    </div>
                 </div>
-                <div class="playlist-card">
-                    <h1 class="playlist-heading">Create your first playlist</h1>
-                    <p class="playlist-description">It's easy, we'll help you</p>
-                    <button type="button" class="playlist-button">Create playlist</button>
-                </div>
-                <div class="podcast-card">
-                    <h1 class="podcast-heading">Let's find some podcasts to follow</h1>
-                    <p class="podcast-description">We'll keep you updated on new episodes</p>
-                    <button type="button" class="podcast-button">Browse podcasts</button>
+                <div class="cards-container">
+                    <div class="playlist-card">
+                        <h1 class="playlist-heading">Create your first playlist</h1>
+                        <p class="playlist-description">It's easy, we'll help you</p>
+                        <button type="button" class="playlist-button">Create playlist</button>
+                    </div>
+                    <div class="podcast-card">
+                        <h1 class="podcast-heading">Let's find some podcasts to follow</h1>
+                        <p class="podcast-description">We'll keep you updated on new episodes</p>
+                        <button type="button" class="podcast-button">Browse podcasts</button>
+                    </div>
                 </div>
                 <div class="library-footer">
-                    <a href="#">Legal</a>
-                    <a href="#">Safety & Privacy Center</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Cookies</a>
-                    <a href="#">About Ads</a>
-                    <a href="#">Accessibility</a>
-                    <div>
-                        <a href="#"><span>Cookies</span></a>
-                    </div>
-                    <div>
-                        <button type="button" class="languages-button">
-                            <img src = "" alt ="web icon" class="web-icon"/>    
-                            English
-                        </button>
-                    </div>
+                    <a href="#" class="more-links">Legal</a>
+                    <a href="#" class="more-links">Safety & Privacy Center</a>
+                    <a href="#" class="more-links">Privacy Policy</a>
+                    <a href="#" class="more-links">Cookies</a>
+                    <a href="#" class="more-links">About Ads</a>
+                    <a href="#" class="more-links">Accessibility</a>
+                <div>
+                    <a href="#" class="more-links"><span>Cookies</span></a>
+                </div>
+                <div>
+                    <button type="button" class="languages-button">
+                        <img src = "./images/Spotify_Web_Icon.jpg" alt ="web icon" class="web-icon"/>    
+                        English
+                    </button>
                 </div>
             </div>
-            <div class="features-and-playlists-container">
-                <div>
-                    <h1>Featured Charts</h1>
-                </div>
-                <div>
-                    <p>Show all</p>
+        </div>        
+            
+        <div class="features-container">
+                <div class="charts-container">
+                    <h1 class="charts">Featured Charts</h1>
+                    <p class="show-all">Show all</p>
                 </div>
                 <div class="top-charts">
-                    <div>
-                        <img src = "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt = "top songs global" class="music" />
-                        <p>Your weekly update of the most played...</p>
+                    <div class="top-card">
+                        <img src = "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt = "top songs global" class="music-card-image" />
+                        <p class="card-description">Your weekly update of the most played...</p>
                     </div>
-                    <div>
-                        <img src = "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt = "top songs usa" class="music" />
-                        <p>Your weekly update of the most played...</p>
+                    <div class="top-card">
+                        <img src = "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt = "top songs usa" class="music-card-image" />
+                        <p class="card-description">Your weekly update of the most played...</p>
                     </div>
-                    <div>
-                        <img src = "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt = "top 50 global" class="music" />
-                        <p>Your daily update of the most played...</p>
+                    <div class="top-card">
+                        <img src = "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt = "top 50 global" class="music-card-image" />
+                        <p class="card-description">Your daily update of the most played...</p>
                     </div>
-                    <div>
-                        <img src = "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg" alt = "top 50 usa" class="music" />
-                        <p>Your daily update of the most played...</p>
+                    <div class="top-card">
+                        <img src = "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg" alt = "top 50 usa" class="music-card-image" />
+                        <p class="card-description">Your daily update of the most played...</p>
                     </div>
-                    <div>
-                        <img src = "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt = "viral 50 global" class="music" />
-                        <p>Your daily update of the most viral track...</p>
+                    <div class="top-card">
+                        <img src = "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt = "viral 50 global" class="music-card-image" />
+                        <p class="card-description">Your daily update of the most viral track...</p>
                     </div>
                 </div>
-                <div>
-                    <h1>Zzzzzzz</h1>
-                </div>
-                <div>
-                    <p>Show all</p>
+                <div class="playlists-container">
+                    <h1 class="editors">Zzzzzzz</h1>
+                    <p class="show-all">Show all</p>
                 </div>
                 <div class="playlists">
-                    <div>
-                        <img src = "https://i.scdn.co/image/ab67706f00000002e33921151f34f084b36d4480" alt = "night rain" class="music" />
-                        <p>Sleep with sounds of pouring rain and...</p>
+                    <div class="top-card">
+                        <img src = "https://i.scdn.co/image/ab67706f00000002e33921151f34f084b36d4480" alt = "night rain" class="music-card-image" />
+                        <p class="card-description">Sleep with sounds of pouring rain and...</p>
                     </div>
-                    <div>
-                        <img src = "https://i.scdn.co/image/ab67706f0000000210fa928169ac488089e13b1c" alt = "brown noise" class="music" />
-                        <p>Soothing, low frequencies for...</p>
+                    <div class="top-card">
+                        <img src = "https://i.scdn.co/image/ab67706f0000000210fa928169ac488089e13b1c" alt = "brown noise" class="music-card-image" />
+                        <p class="card-description">Soothing, low frequencies for...</p>
                     </div>
-                    <div>
-                        <img src = "https://i.scdn.co/image/ab67706f000000022577ecdc8baf0bf2d76df05b" alt = "floating through space" class="music" />
-                        <p>Ambient drone to make you feel...</p>
+                    <div class="top-card">
+                        <img src = "https://i.scdn.co/image/ab67706f000000022577ecdc8baf0bf2d76df05b" alt = "floating through space" class="music-card-image" />
+                        <p class="card-description">Ambient drone to make you feel...</p>
                     </div>
-                    <div>
-                        <img src = "https://i.scdn.co/image/ab67706f000000021178668a0433d73e34bb4af5" alt = "deep sleep" class="music" />
-                        <p>Soothing, minimalist ambient for deep...</p>
+                    <div class="top-card">
+                        <img src = "https://i.scdn.co/image/ab67706f000000021178668a0433d73e34bb4af5" alt = "deep sleep" class="music-card-image" />
+                        <p class="card-description">Soothing, minimalist ambient for deep...</p>
                     </div>
-                    <div>
-                        <img src = "https://i.scdn.co/image/ab67706f00000002d6e987f5eac610420e385ead" alt = "jazz for sleep" class="music" />
-                        <p>Let these calm Jazz tracks full you to...</p>
+                    <div class="top-card">
+                        <img src = "https://i.scdn.co/image/ab67706f00000002d6e987f5eac610420e385ead" alt = "jazz for sleep" class="music-card-image" />
+                        <p class="card-description">Let these calm Jazz tracks full you to...</p>
                     </div>
                 </div>
-                <div class="playlists-footer">
-                    <div>
-                        <h1>Company</h1>
-                        <a href="#">About</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">For the Record</a>
+                <div class="features-footer">
+                    <div class="links-container">
+                        <h1 class="link-heading">Company</h1>
+                        <a href="#" class="link">About</a>
+                        <a href="#" class="link">Jobs</a>
+                        <a href="#" class="link">For the Record</a>
                     </div>
-                    <div>
-                        <h1>Communities</h1>
-                        <a href="#">For Artists</a>
-                        <a href="#">Developers</a>
-                        <a href="#">Advertising</a>
-                        <a href="#">Investors</a>
-                        <a href="#">Vendors</a>
+                    <div class="links-container">
+                        <h1 class="link-heading">Communities</h1>
+                        <a href="#" class="link">For Artists</a>
+                        <a href="#" class="link">Developers</a>
+                        <a href="#" class="link">Advertising</a>
+                        <a href="#" class="link">Investors</a>
+                        <a href="#" class="link">Vendors</a>
                     </div>
-                    <div>
-                        <h1>Useful links</h1>
-                        <a href="#">Support</a>
-                        <a href="#">Free Mobile App</a>
+                    <div class="links-container">
+                        <h1 class="link-heading">Useful links</h1>
+                        <a href="#" class="link">Support</a>
+                        <a href="#" class="link">Free Mobile App</a>
                     </div>
-                    <div>
-                        <h1>Spotify Plans</h1>
-                        <a href="#">Premium Individual</a>
-                        <a href="#">Premium Duo</a>
-                        <a href="#">Premium Family</a>
-                        <a href="#">Premium Student</a>
-                        <a href="#">Spotify Free</a>
+                    <div class="links-container">
+                        <h1 class="link-heading">Spotify Plans</h1>
+                        <a href="#" class="link">Premium Individual</a>
+                        <a href="#" class="link">Premium Duo</a>
+                        <a href="#" class="link">Premium Family</a>
+                        <a href="#" class="link">Premium Student</a>
+                        <a href="#" class="link">Spotify Free</a>
                     </div>
-                    <div>
-                        <a href="https://www.instagram.com/"><img src = "./images/Instagram_Icon.png" alt = "instagram" class="instagram icon" /></a>
-                        <a href="https://x.com/?lang=en"><img src = "./images/Twitter_Icon.png" alt = "twitter" class="twitter icon" /></a>
-                        <a href="https://www.facebook.com/"><img src = "./images/Facebook_Icon.png" alt = "facebook" class="facebook icon" /></a>
+                    <div class="icons-container">
+                        <a href="https://www.instagram.com/"><img src = "./images/Instagram_Icon.png" alt = "instagram" class="icon" /></a>
+                        <a href="https://x.com/?lang=en"><img src = "./images/Twitter_Icon.png" alt = "twitter" class="icon" /></a>
+                        <a href="https://www.facebook.com/"><img src = "./images/Facebook_Icon.png" alt = "facebook" class="icon" /></a>
                     </div>
+                </div>
+                <div class="copyright-container">
+                    <hr class ="horizontal-line"/>
+                    <p class="copyright"><img src = "./images/Spotify_Copyright_Icon.png" alt = "copyright icon" class="copyright-icon" /> 2024 Spotify AB</p>
                 </div>
             </div>
         </div>

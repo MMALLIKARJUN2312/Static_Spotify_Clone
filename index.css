@@ -38,7 +38,7 @@
     display: flex;
 }
 
-.icon-container {
+.home-container {
     height: 2.5rem;
     width: 2.5rem;
     margin: 0.5rem 0.5rem 0.5rem 1rem;
@@ -58,24 +58,32 @@
 
 .search-bar {
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10rem;
     padding: 0.25rem 1rem;
 }
 
-.search-icon {
-    height: 3rem;
-    width: 3rem;
-    background-color: #2a2a2a;
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .spotify-search-box {
+    font-size: 1rem;
     height: 3rem;
-    width: 21rem;
+    width: 30rem;
     border-radius: 10rem;
     background-color: #2a2a2a;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     border: none;
+    outline: none;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    box-sizing: border-box;
 }
 
 .spotify-search-box::placeholder {
@@ -83,14 +91,34 @@
     padding-left: 1rem;
 }
 
-.vertical-line {
-    border-left: 2px solid #ccc;     
-    height: 80%;                     
-    margin: 0 1rem;                   
+.search-icon {
+    left: 0.5rem;
+    position: absolute;
+    height: 2.75rem;
+    width: 2.75rem;
+    background-color: #2a2a2a;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1.25rem;
+    position: absolute;
+    right: 1rem;
+    margin-left: 1rem;
+}
+
+.vertical-line {    
+    height: 2rem;
+    width: 0.2rem;                     
+    margin: 0 1rem;
+    background-color: #cccccc;                   
 }
 
 .browse-icon {
-    height: 3rem;
+    height: 2.75rem;
+    width: 2.75rem;
+    background-color: #2a2a2a;
 }
 
 .spotify-signup-and-login {
@@ -114,6 +142,341 @@
     height: 3.5rem;
     width: 8.5rem;
     border-radius: 2rem;
+}
+
+.spotify-main-section {
+    display: flex;
+    background-color: #000000;
+}
+
+.library-and-footer-container {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 20rem;
+    margin-top: 4rem;
+    background-color: #121212;
+    border-radius: 1rem;
+    position: sticky;
+}
+
+.library-container {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.your-library {
+    display: flex;
+    align-items: center;
+}
+
+.library-icon {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.75rem;
+}
+
+.library-heading {
+    font-size: 1rem;
+    align-items: center;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0.8;
+    padding-left: 1rem;
+}
+
+.plus-sign {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    opacity: 0.8;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 0.75rem;
+    margin-left: 2.5rem;
+}
+
+.cards-container {
+    overflow-y: scroll;
+}
+
+.playlist-card {
+    height: 8rem;
+    width: 15.5rem;
+    background-color: #1f1f1f;
+    margin-top: 1rem;
+    margin-left: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.playlist-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;    
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    opacity: 0.95;
+}
+
+.playlist-description {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #ffffff;    
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.25rem;
+    opacity: 0.9;
+}
+
+.playlist-button {
+    height: 2rem;
+    width: 8rem;
+    color: #000000;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 7rem;
+    background-color: #ffffff;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.25rem;
+    padding: 0.3rem;
+}
+
+.podcast-card {
+    height: 8rem;
+    width: 15.5rem;
+    background-color: #1f1f1f;
+    margin-top: 1rem;
+    margin-left: 0.75rem;
+    padding-top: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.podcast-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;    
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.25rem;
+    opacity: 0.95;
+}
+
+.podcast-description {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #ffffff;    
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.25rem;
+    opacity: 0.9;
+}
+
+.podcast-button {    
+    height: 2rem;
+    width: 8rem;
+    color: #000000;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 7rem;
+    background-color: #ffffff;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+}
+
+.library-footer {
+    height: 20rem;
+    background-color: #121212;
+    width: 18rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    position: sticky;
+}
+
+.more-links {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.8;
+    margin-left: 1rem;
+    padding-right: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+.languages-button {
+    height: 2.5rem;
+    width: 7rem;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-left: 0.75rem;
+    padding-left: 0.5rem;
+    border-radius: 10rem;
+    border: 0.05rem solid #ffffff;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.web-icon {
+    height: 2rem;
+    width: 2rem;
+    padding-right: 0.5rem;
+}
+
+.features-container {
+    height: 80%;
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 0.5rem;
+    background-color: #121212;
+    border-radius: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.charts {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 1rem;
+}
+
+.show-all {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 1rem;
+}
+
+.top-charts {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.music-card-image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    padding-right: 0.75rem;
+    margin-left: 1rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.5;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.playlists-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editors {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 1rem;
+}
+
+.playlists {
+    display: flex;
+}
+
+
+.features-footer {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-left: 0.75rem;
+}
+
+.link-heading {
+    font-size: 1rem;
+    font-weight: 550;
+    color: #ffffff;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.5;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+}
+
+.icons-container {
+    display: flex;
+}
+
+.icon {
+    height: 1rem;
+    width: 1rem;
+    padding-right: 1rem;
+}
+
+.copyright-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 0.75rem;
+    margin-bottom: 5rem;
+}
+
+.horizontal-line {
+    line-height: 0.1rem;
+    width: 95%;
+    color: #ffffff;
+    opacity: 0.3;
+    margin-left: 0.75rem;
+    margin-right: 1rem;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.7;
+    padding-top: 1rem;
+}
+
+.copyright-icon {
+    height: 1rem;
+    width: 1rem;
+    padding-top: 1rem;
+    margin-left: 0.75rem;
 }
 
 .preview-of-spotify {
